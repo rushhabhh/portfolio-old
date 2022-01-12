@@ -1,0 +1,469 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fafafa !important;
+    color: #000000 !important;
+    font-family: 'Space Mono', monospace !important;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+#title {
+    margin-bottom: 160px;
+}
+
+#introduction {
+    padding: 13%;
+}
+
+.navbar {
+    padding: 2% 3.5%;
+}
+
+.navbar-brand {
+    color: #000000;
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {   
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.about-description {
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    letter-spacing: 0.8px;
+    padding: 0 50px 0 170px;
+}
+
+.icon {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin-top: 100px;
+    position: fixed;
+}
+
+.fab {
+    font-size: 30px;
+    padding: 10px;
+    color: #000000;
+    transition: all 0.8s;
+}
+
+.fa-instagram:hover, .fa-linkedin-in:hover, .fa-github:hover {
+    font-size: 40px;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.more-about {
+    font-size: 3.125rem;
+    line-height: 75px;
+    font-weight: 600;
+}
+
+.intro-para {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+}
+
+#feature {
+    position: relative;
+    bottom: 60px;
+}
+
+#feature .container-fluid {
+    padding: 0 10% 0 14%;
+}
+
+.feature-title {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.feature-para {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#whatido, #recent-work {
+    position: relative;
+    margin-top: 80px;
+}
+
+#whatido .container-fluid, #recent-work .container-fluid {
+    padding: 0 0 0 15%;
+}
+
+.service {
+    padding: 4% 15% 0 0;
+    line-height: 1.8rem;
+}
+
+.common-head {
+    font-weight: 600;
+    font-size: 6.25rem;
+    position: relative;
+    right: 12px;
+}
+
+.whatido-para {
+    margin-top: 20px;
+}
+
+h6 {
+    letter-spacing: 1px;
+}
+
+#recent-work .row {
+    margin-top: 60px;
+}
+
+.web-tag {
+    position: relative;
+    left: -8px;
+    line-height: 4.5rem;
+    color: #d3d3d3;
+    font-size: 2.5rem;
+    transition: all 0.8s;
+    font-weight: 700;
+}
+
+.web-tag:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.work-head {
+    position: relative;
+    left: -40px;
+}
+
+.work-para {
+    position: relative;
+    left: -40px;
+    padding-right: 120px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+}
+
+.work-btn {
+    margin-top: 10px;
+    position: relative;
+    background-color: #fafafa;
+    padding: 8px 25px;
+    left: -40px;
+    border: 2px solid #000000; 
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.work-btn:hover {
+    color: #fafafa;
+    background: #000000;
+}
+
+#resume {
+    padding-bottom: 20px;
+    margin-top: 90px;
+}
+
+.resume-btn {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 40%;
+    background-color: #fafafa;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 10px 50px;
+    font-size: 1.5rem;
+}
+
+.resume-btn:hover {
+    transition: all 0.5s;
+    background-color: #000000;
+    color: #fafafa;
+}
+
+#contact-me .container-fluid {
+    padding: 8% 0 5% 15%;
+}
+
+#contact-me .row {
+    padding-top: 5%;
+}
+
+.contact-detail {
+    padding: 8px 0;
+    letter-spacing: 0.8px;
+}
+
+.contact-para {
+    margin-left: 10px;
+    padding: 0 15% 0 0;
+}
+
+.form-placement {
+    margin-left: -70px;
+}
+
+input[type=text], input[type=email], textarea {
+    border: 1px solid #000000;
+    padding: 5px 10px;
+    background-color: #fafafa;
+}
+
+.form-subject {
+    width: 452px;
+}
+
+.send-message {
+    background-color: #000000;
+    color: #fafafa;
+    border: 1px solid #000000;
+    padding: 10px 165px;
+    font-size: 1rem;
+}
+
+#footer {
+    padding: 40px 0 50px 0;
+}
+
+::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 0.3rem;
+}
+
+@media only screen and (max-width: 640px) {
+    html {
+        overflow-x: hidden !important;
+    }
+
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .navbar {
+        background-color: #ffffff;
+    }
+
+    .about-description {
+        position: relative;
+        margin-left: -170px;
+        font-size: 23px;
+        bottom: 60px;
+        line-height: 2.5rem;
+    }
+
+    .icon {
+        visibility: hidden;
+    }
+
+    #introduction {
+        margin-left: -45px;
+        padding-right: 0;
+    }
+
+    .more-about {
+        position: relative;
+        font-size: 27.7px;
+    }
+
+    .intro-para {
+        position: relative;
+        font-size: 12px;
+        bottom: 20px;
+    }
+
+    .feature-title {
+        margin-top: 20px;
+        font-size: 50px;
+    }
+
+    .feature-para {
+        font-size: 13px;
+    }
+
+    #whatido {
+        margin-left: -26px;
+        padding-right: 0;
+    }
+
+    .common-head {
+        font-size: 35px;
+    }
+
+    #whatido .service {
+        position: relative;
+        top: 30px;
+        margin-bottom: 15px;
+    }
+
+    #whatido .h6 {
+        font-size: 15px;
+    }
+
+    .whatido-para {
+        font-size: 12px;
+    }
+
+    #recent-work {
+        margin-left: -33px;
+        padding-right: 0;
+    }
+
+    .whole-web-tags {
+        position: relative;
+        top: 600px;
+        text-align: center;
+    }
+
+    .web-tag {
+        font-size: 18px;
+    }
+
+    .whole-head-para {
+        position: relative;
+        margin-left: 35px;
+        bottom: 400px;
+    }
+
+    .work-para {
+        padding-right: 0;
+        position: relative;
+        top: 10px;
+    }
+
+    .work-button {
+        font-size: 14px;
+        padding: 6px 18px;
+    }
+
+    .marginal-head1 {
+        position: relative;
+        bottom: 30px;
+    }
+
+    .marginal-head2 {
+        position: relative;
+        bottom: 60px;
+    }
+
+    .marginal-head3 {
+        position: relative;
+        bottom: 90px;
+    }
+
+    .marginal-head4 {
+        position: relative;
+        bottom: 120px;
+    }
+
+    #resume {
+        position: relative;
+        bottom: 80px;
+        padding-right: 0;
+        margin-left: -80px;
+    }
+
+    .resume-btn {
+        position: relative;
+        left: -80px;
+        font-size: 16px;
+        padding: 7px 60px;
+    }
+
+    #contact-me {
+        margin-left: -30px;
+    }
+
+    .cont-resp-para {
+        font-size: 12px;
+        line-height: 1.5rem;
+    }
+
+    h5 {
+        font-size: 15px;
+    }
+
+    .form-placement {
+        padding: 2% 22%;
+    }
+
+    .form-style {
+        width: 160%;
+    }
+
+    .form-style1 {
+        position: relative;
+        top: 12px;
+    }
+
+    .send-message {
+        font-size: 14px !important;
+        padding: 8px 40px;
+        position: relative;
+        left: 70px;
+    }
+
+    .madewith {
+        font-size: 12px;
+    }
+}
